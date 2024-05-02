@@ -1,0 +1,49 @@
+.navbar{
+    background-color: aqua;
+}
+
+.nav-link{
+    color: rgb(6, 19, 19) !important;
+
+}
+.nav-link:hover{
+color: gray !important;
+}
+
+.collapse{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.jumbotron{
+    background-image: url(./multimedia/beach-518188_1280.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbotron button:hover{
+background-color: gray;
+}
+h1{
+    text-transform: uppercase;
+}
+
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+}
+footer a{
+    color: rgb(14, 224, 231);
+    font-size: 30px;
+    letter-spacing: 15px;
+    text-decoration: none;
+
+}
+footer a:hover{
+    color: azure;
+}
