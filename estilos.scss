@@ -41,6 +41,7 @@ h1{
     padding: 20px;
     font-family: $font1;
 }
+
 /* main inicia */
 main{
     height: 100vh;
@@ -67,17 +68,19 @@ main{
 /* inicio fin */
 
 /* nosotros inicia */
-.nosotros{
-    width: 75%;
-    border: 8px solid $color3;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 25px;
-    align-items: center;
-    text-align: center;
-    ;
-
+.nos{
+    justify-content: center;
 }
+
+.nosotros{
+    height: 240px;
+    width: 90%;
+    border: 5px solid $color3;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
 .nosotros a{
     color: $color4;
     background-color: aqua;
@@ -89,6 +92,7 @@ main{
 .nosotros a:hover{
     background-color: $color2;
 }
+
 /* nosotros fin */
 
 
@@ -108,9 +112,21 @@ main{
     text-align: center;
 
 }
-.card-img{
+.card-img1{
     height: 200px;
     background-image: url(./multimedia/IMG-20240329-WA0049.jpg);
+    background-size: cover;
+    border: none;
+}
+.card-img2{
+    height: 200px;
+    background-image: url(./multimedia/IMG-20240329-WA0042.jpg);
+    background-size: cover;
+    border: none;
+}
+.card-img3{
+    height: 200px;
+    background-image: url(./multimedia/);
     background-size: cover;
     border: none;
 }
@@ -121,14 +137,8 @@ main{
 }
 .card-desc{
     padding: 10px;
-
 }
-@media all and (max-width: 400px){
-    .card{
-        
 
-    }
-}
 /* departamento fin */
 
 
@@ -141,28 +151,10 @@ main{
     padding: 10px;
     margin: 10px;
     text-align: center;
+
 }
-@media all and (min-width: 850px){
-    iframe{
-        height:  300px;
-        width: 800px;
-        
-    }
-}
-@media all and (max-width: 850px){
-    iframe{
-        height: 400px;
-        width: 500px;
-        
-    }
-}
-@media all and (max-width: 500px){
-    iframe{
-        height: 200px;
-        width: 200px;
-        
-    }
-}
+
+
 /* contacto fin */
 
 
@@ -180,8 +172,24 @@ footer a{
     letter-spacing: 15px;
     text-decoration: none;
 
+
 }
 footer a:hover{
     color: $color4;
 }
 /* footer fin */
+
+.wpp{
+    height: 40px;
+    width: 40px;
+    color: rgb(227, 230, 227);
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    font-size: 25px;
+    background-color: $color4;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: rgb(61, 234, 61);
+}

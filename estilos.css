@@ -52,14 +52,17 @@ main {
 }
 /* inicio fin */
 /* nosotros inicia */
+.nos {
+  justify-content: center;
+}
+
 .nosotros {
-  width: 75%;
-  border: 8px solid rgb(166, 164, 164);
+  height: 240px;
+  width: 90%;
+  border: 5px solid rgb(166, 164, 164);
   border-radius: 10px;
-  padding: 20px;
-  margin: 25px;
-  align-items: center;
   text-align: center;
+  padding: 10px;
 }
 
 .nosotros a {
@@ -91,9 +94,23 @@ main {
   text-align: center;
 }
 
-.card-img {
+.card-img1 {
   height: 200px;
   background-image: url(./multimedia/IMG-20240329-WA0049.jpg);
+  background-size: cover;
+  border: none;
+}
+
+.card-img2 {
+  height: 200px;
+  background-image: url(./multimedia/IMG-20240329-WA0042.jpg);
+  background-size: cover;
+  border: none;
+}
+
+.card-img3 {
+  height: 200px;
+  background-image: url(./multimedia/);
   background-size: cover;
   border: none;
 }
@@ -119,24 +136,6 @@ main {
   text-align: center;
 }
 
-@media all and (min-width: 850px) {
-  iframe {
-    height: 300px;
-    width: 800px;
-  }
-}
-@media all and (max-width: 850px) {
-  iframe {
-    height: 400px;
-    width: 500px;
-  }
-}
-@media all and (max-width: 500px) {
-  iframe {
-    height: 200px;
-    width: 200px;
-  }
-}
 /* contacto fin */
 /* footer inicia */
 footer {
@@ -159,5 +158,17 @@ footer a:hover {
 }
 
 /* footer fin */
-
-/*# sourceMappingURL=estilos.css.map */
+.wpp {
+  height: 40px;
+  width: 40px;
+  color: rgb(227, 230, 227);
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  font-size: 25px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: rgb(61, 234, 61);
+}/*# sourceMappingURL=estilos.css.map */
