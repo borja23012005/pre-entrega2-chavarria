@@ -16,9 +16,10 @@ $font2: fantasy;
     box-sizing: border-box;
     
 }
+
 /* nav inicia */
 .navbar{
-    background-color: $color1;
+    background-image: linear-gradient( to left, $color1, $color2);
 }
 
 .nav-link{
@@ -34,18 +35,29 @@ color: $color3 !important;
     justify-content: flex-end;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+}
+
 h1{
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     font-family: $font1;
+
 }
+
+
 
 /* main inicia */
 main{
     height: 100vh;
     background-image: url(./multimedia/beach-518188_1280.jpg);
+    background-position: center;
     background-size: cover;
 }
 
@@ -54,13 +66,21 @@ main{
 
 /* inicio inicia */
 .carousel-inner{
-    height: auto;
+    height: 50%;
     width: auto;
-    padding: 20px;
+    
 }
-@media all and (min-width: 800px){
+.carousel-item {
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+@media only screen and (min-width: 800px){
     .carousel-inner{
         height: 500px;
+        
 
     }
 }
@@ -68,76 +88,136 @@ main{
 /* inicio fin */
 
 /* nosotros inicia */
-.nos{
-    justify-content: center;
+
+
+.nleft{
+    background-image: url(multimedia/windsurfing-2298647_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+    width: 100%;
+    
+}
+.nright{
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.4);
+
 }
 
-.nosotros{
-    height: 240px;
-    width: 90%;
-    border: 5px solid $color3;
-    border-radius: 10px;
-    text-align: center;
-    padding: 10px;
-}
-
-.nosotros a{
-    color: $color4;
-    background-color: aqua;
-    text-decoration: none;
-    padding: 10px 30px;
-    border-radius: 10px;
-    text-transform: uppercase;
-}
-.nosotros a:hover{
-    background-color: $color2;
-}
 
 /* nosotros fin */
 
 
 /* departamento inicia */
-.sec{
+
+
+.dep{
     display: flex;
-    justify-content: space-evenly;
-    padding: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
+.departamentos{
+    height: auto;
+    width: 70%;
+    border: 5px solid $color3;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    float: right;
+    background-color: rgba(255, 255, 255, 0.4);
+    
+}
+.departamentos h1{
+    font-weight: bold;
+}
+
+.departamentos p{
+    margin-bottom: 20px;
+    font-family: $font1;
+    
+}
+
+.departamentos a{
+    color: $color4;
+    background-color: rgb(1, 245, 245);
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.departamentos a:hover{
+    background-color: $color2;
+}
+
+.sec{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 180);
+    padding: 20px;
+    grid-gap: 15px;
+    background-color: $color1;
+    background-image: linear-gradient($color1, $color2);
+}
 
 .card{
-    background-color: $color1;
+    background-color: $color3;
     height: auto;
     width: auto;
-    border: 5px solid $color1;
+    border: 5px solid $color3;
     text-align: center;
 
 }
 .card-img1{
     height: 200px;
-    background-image: url(./multimedia/IMG-20240329-WA0049.jpg);
+    background-image: url(./multimedia/IMG-20240329-WA0049~2.jpg);
+    background-position: center;
     background-size: cover;
     border: none;
 }
 .card-img2{
     height: 200px;
     background-image: url(./multimedia/IMG-20240329-WA0042.jpg);
+    background-position: center;
     background-size: cover;
     border: none;
 }
 .card-img3{
     height: 200px;
-    background-image: url(./multimedia/);
+    background-image: url(./multimedia/IMG-20240329-WA0029.jpg);
+    background-position: center;
     background-size: cover;
     border: none;
 }
 .card-title{
     font-size: 20px;
     text-transform: uppercase;
+    padding: 10px;
     
 }
 .card-desc{
     padding: 10px;
 }
+
+.card a{
+    color: $color4;
+    background-color: rgb(16, 24, 24);
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.card a:hover{
+    background-color: $color1;
+}
+
+
 
 /* departamento fin */
 
@@ -165,6 +245,7 @@ footer{
     color: $color1;
     font-size: 20px;
     padding: 15px;
+    margin-top: auto;
 }
 footer a{
     color: $color1;
@@ -192,4 +273,64 @@ footer a:hover{
     line-height: 40px;
     border-radius: 50%;
     background-color: rgb(61, 234, 61);
+}
+@media only screen and (min-width:480px){
+    .sec{
+        grid-template-columns: 1fr 1fr;
+    }
+    .quienes{
+        display: flex;
+    }
+    .nleft{
+        height: 20%;
+    }
+}
+@media only screen and (min-width:700px){
+    .sec{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(1, 180px);
+        height: 550px;
+    }
+    .card{
+    height: 400px;
+    }
+}
+@media only screen and (min-width:480px){
+    .sec{
+        grid-template-columns: 1fr 1fr;
+    }
+    .quienes{
+        display: flex;
+    }
+    .nleft{
+        height: 20%;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width:700px){
+    .sec{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(1, 180px);
+        height: 550px;
+    }
+    .card{
+    height: 400px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .departamentos h1{
+        font-size: 15px;
+    }
+    
+    .departamentos p{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:300px){
+    .departamentos p{
+        font-size: 10px;
+    }
 }
