@@ -141,24 +141,24 @@ main {
 }
 
 .card-img1 {
-  background-image: url(./multimedia/IMG-20240329-WA0049~2.jpg);
   height: 200px;
+  background-image: url(./multimedia/IMG-20240329-WA0049~2.jpg);
   background-position: center;
   background-size: cover;
   border: none;
 }
 
 .card-img2 {
-  background-image: url(./multimedia/IMG-20240329-WA0042.jpg);
   height: 200px;
+  background-image: url(./multimedia/IMG-20240329-WA0042.jpg);
   background-position: center;
   background-size: cover;
   border: none;
 }
 
 .card-img3 {
-  background-image: url(./multimedia/IMG-20240329-WA0029.jpg);
   height: 200px;
+  background-image: url(./multimedia/IMG-20240329-WA0029.jpg);
   background-position: center;
   background-size: cover;
   border: none;

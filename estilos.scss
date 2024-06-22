@@ -173,26 +173,24 @@ main{
     text-align: center;
 
 }
+@mixin sizes ($height, $backgraund-position, $backraund-size, $border){
+    height: $height;
+    background-position: $backgraund-position;
+    background-size: $backraund-size;
+    border: $border;
+}
+
 .card-img1{
-    height: 200px;
     background-image: url(./multimedia/IMG-20240329-WA0049~2.jpg);
-    background-position: center;
-    background-size: cover;
-    border: none;
+    @include sizes(200px, center, cover, none);
 }
 .card-img2{
-    height: 200px;
     background-image: url(./multimedia/IMG-20240329-WA0042.jpg);
-    background-position: center;
-    background-size: cover;
-    border: none;
+    @include sizes(200px, center, cover, none);
 }
 .card-img3{
-    height: 200px;
     background-image: url(./multimedia/IMG-20240329-WA0029.jpg);
-    background-position: center;
-    background-size: cover;
-    border: none;
+    @include sizes(200px, center, cover, none);
 }
 .card-title{
     font-size: 20px;
